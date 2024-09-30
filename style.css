@@ -1,0 +1,13 @@
+body{
+background-color: antiquewhite;
+}
+
+ul li{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+
+
+
+
