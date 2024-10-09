@@ -11,18 +11,21 @@
         }
         .man{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             background-color: black;
             color: aliceblue;
-            height: 50px;
-
+            height: 50px;  
+            position: sticky;
+            
 
         }
 
         .li a{
             color: aliceblue;
         }
+        
         .li{
             display: flex;
             column-gap: 20px;
@@ -49,34 +52,54 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            
         }
 
         .cover1{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            width: auto;
+           
             padding: 5px;
         }
 
         .cover2{
+            display: flex;
+            flex-grow: 1;
             flex-direction: column;
-            gap: px;
+            flex-grow: 1;
+            /* gap: px; */
             padding: 5px;
-        } 
-       
+            width: 450px;
+            
+           
+        }
+        .cover3{
+            margin-left: 5px;
+        }
+
+        .cover4{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5px;
+
+        }
+        .left-side{
+            position: relative;
+            top: 100px;
+        }
+
 
     </style>
 
-
-
-
-
-
-   
 
 </head>
 <body>
     <nav class="man">
 
-        <div style=""><img src="logo.png" alt="logo" height="50px">
-
+        <div style="">
+            <img src="logo.png" alt="logo" height="50px">
         </div>
        
         <form action="/index.html"  method="post" class="form" >
@@ -92,28 +115,109 @@
 
 
     </nav>
-    <br>
-    <br>
-    <br>
+   
     
-
-
     <div class="container">
         <div class="cover1">
-            <img src="images/hope-lg.jpg" height="430px" width="500px" alt=""></div>
-
+            <img src="images/hope-lg.jpg" height="300px" width="100%" alt="">
+           
+        </div>
+       
         <div class="cover2"> 
 
-            <div class="coverII">
-                <img src="images/hope-lg.jpg" height="215px" width="500px" alt="">
+            <div class="coverII" >
+                <img src="images/hope-lg.jpg" height="150px" width="100%" alt="">
             </div>
 
             <div class="coverI">
-                <img src="images/hope-lg.jpg" height="215px" width="500px" alt="">
+                <img src="images/hope-lg.jpg" height="150px" width="100%" alt="">
             </div>
+        </div>   
+
+    </div>
+
+    <div class="cover3">
+        <div class="IV">
+            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
+            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
+            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
         </div>
 
     </div>
+
+    <div class="cover4">
+        <div class="VII">
+            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
+            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
+            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
+
+        </div>
+
+        <section class="left-side">
+            <h1>Archive</h1>
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                
+            </ul>
+            <h2>Latest</h2>
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+            </ul>
+        </section>
+
+    </div>
+
    
+
+    <footer class="footer">
+        <div class="ul">
+        <div>
+        <ul>
+        <li>The Tech</li>
+        <li>Email</li>
+        <li>Telephone</li>
+        <li> copywrite</li>
+        </ul>
+        </div>
+        
+
+        <div>
+        <ul>
+            <li>Userprofile</li>
+            <li>Settings</li>
+            <li>Help</li>
+            <li>FAQS</li>
+        </ul>
+        </div>
+
+        <div>
+        <ul>
+            <li>subcribe</li>
+        </ul>
+       
+
+        <form action="/index.html"  method="post" class=do >
+            <input type="text" name="Email" id="Email"  placeholder="@email.com">
+            <input type="submit" value="send">
+        </form>
+
+        <form action="/index.html"  method="post" class="bot">
+            <input type="submit" value="">
+            <input type="submit" value="">
+            <input type="submit" value="">
+            <input type="submit" value="">
+            
+       
+    </div>
+    </div>
+
+    </footer>
+
+    
+
 </body>
 </html>
