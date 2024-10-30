@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+       
+    .form{
+        display: flex;
+        flex-direction:column ;
+        width: 300px;
+        row-gap: 20px;
+       padding: 80px;
+       border-radius: 1rem;
+       border: 1px solid rgb(230, 153, 86);
+       box-shadow: 0 0 10px;
+       padding: 80px;
+    }
+
+    .form-s{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form input{
+        height: 40px;
+        border: 2px solid rgb(20, 18, 18);
+        box-shadow: 0 0 20px greenyellow;
+    }
+
+    .form .sub :hover{
+        background-color: black;
+        color: white;
+
+
+    }
+
+
+       
+               
+    </style>
+</head>
+
+        
+<body>
+   
+    <div class="form-s">
+    <form  method="post" class="form">
+        <h1>Singn In</h1>
+        <label for="Email">E-mail</label>
+        <input type="text"  name="Email"  id="email" code="{{2}}" placeholder="Email">
+        
+    
+        <label for="password">password</label>
+        <input type="number"  name="password"  id="password"   code="{{2}}"placeholder="password">
+        
+
+        <label for="password">Comfirm Password</label>
+        <input type="password" name="password" id="password"  code="{{2}}" placeholder="password">
+        
+    
+        <label for="send"  class="sub">send</label>
+        <input type="submit"  name="submit" value="Send">
+
+        
+</form>
+</div>
+    
+</body>
+</html>

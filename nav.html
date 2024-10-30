@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            text-decoration: none;
+           
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            background-color: aliceblue;
+            text-decoration: none;
+            height: 60px;
+            
+
+        }
+
+        .li{
+           display: flex;
+           column-gap: 20px;
+           font-size: larger;
+           list-style: none;
+           text-decoration: none;
+           color: black;
+        }
+
+
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .li1{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            column-gap: 20px;
+
+        }
+
+        .lia{
+            color: black;
+        }
+
+        .nav2{
+            display: flex;
+            justify-content: space-around;
+            background-color: azure;
+            height: 80px;
+            margin-top: 10px;
+
+        }
+
+        .tag{
+        display: flex;
+        justify-content: space-around;
+        background-color: aliceblue;
+        font-size: 20px;
+         
+        }
+
+       .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       background-color: #009688;
+       color: white;
+       padding: 10px 20px;
+       font-family: Arial,sans-serif;
+       }
+
+       .logo2{
+        font-size: 24px;
+       }
+
+       .brand-name{
+        color: #000;
+       }
+
+       .search-bar{
+        display: flex;
+        align-items: center;
+       }
+       
+        
+
+        
+    </style>
+</head>
+<body>
+    <nav class="tag">
+
+         <div>   
+        <ul class="li">
+            <li class="lia"><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">FAQS</a></li>
+        </ul>
+    </div>
+
+
+        <div class="logo">
+            <img src="hope-leg.png" alt=" logo" height="60px">
+        </div>
+
+
+        <div class="li1">
+            <li>EN</li>
+            <li>USD</li>
+        </div>
+   
+    </nav>
+    <header class="header">
+        <div class="logo2">
+            <h1><span class="brand-name">
+                THE</span>BRAIN</h1>
+            </div>
+            <!-- <div id="the">THE</div>
+            <div id="brain">BRAIN</div> -->
+            <!-- <script>
+                const theDiv =
+                document.getElementById('the');
+                const brainDiv =
+                document.getElementById('brain');
+
+                const mergeDiv =
+                document.createElement('div');
+                mergeDiv.textContent=
+                theDiv.textContent + '' +
+                brainDiv.textContent;
+            </script> -->
+
+        <div class="search-bar">
+            <select>
+                <option>phone</option>
+            </select>
+            <input type="text" placeholder="Search for products">
+            <button>Search</button>
+        </div>
+
+        <div class="Customer service">
+            <span>Customer Service: +233550965601</span>
+
+        </div>
+
+    </header>
+</body>
+</html>

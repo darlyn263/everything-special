@@ -7,6 +7,7 @@
     <style>
         *{
             margin: 0%;
+            padding: 0;
             text-decoration: none;
         }
         .man{
@@ -28,6 +29,7 @@
         
         .li{
             display: flex;
+            flex-wrap: wrap;
             column-gap: 20px;
             list-style: none;
             margin-right: 120px;
@@ -74,31 +76,59 @@
             width: 450px;
             
            
-        }
-        .cover3{
+        /* }
+        .main{
+            width: 900px;
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            /* gap: 12px;
+            */
+        }
+
+        .left-side{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            column-gap: 12px;
+            margin: 5px;
+            /* gap: 12px ; */
            
         }
 
-        .cover4{
-            width: 70%;
+        .right-side{
+            /* width: 30px; */
+           font-size: 30px;
+           flex-grow: 1;
+           right: 0;
+           /* gap: 12px; */
+           }
+
+           .li{
+            display: flex;
+            justify-content: space-between;
+            text-align: none;
+           }
+
+           .type{
+            padding-top: 10px;
+           gap: 12px;
+           }
+           .image{
+            width: 299px;
+            height: auto;
+           }
+           .footer{
+           
+           }
+           .main{
             display: flex;
             flex-wrap: wrap;
-            column-gap: 12px;
-            
+           } */
 
-        }
-        .left-side{
-          
-        }
-
-        .li{
-            
-
-        }
-
-
+      
     </style>
 
 
@@ -106,7 +136,7 @@
 <body>
     <nav class="man">
 
-        <div style="">
+        <div>
             <img src="logo.png" alt="logo" height="50px">
         </div>
        
@@ -123,9 +153,8 @@
 
 
     </nav>
-   
-    
-    <div class="container">
+
+    <!-- <div class="container">
         <div class="cover1">
             <img src="images/hope-lg.jpg" height="300px" width="100%" alt="">
            
@@ -144,66 +173,77 @@
 
     </div>
 
-    <div class="cover3">
+    <div class="main">
+        <div class="left-side">
+            <div class="box">
+                <div class="image">
+                    <img src="images/hope-lg.jpg" height="100%" width="100%" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>Hi, i am you desc</p>
+             </div>
+    
+             <div class="box">
+                <div class="image">
+                    <img src="images/hope-lg.jpg" height="100%" width="100%" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>Hi, i am you desc</p>
+             </div>
+             <div class="box">
+                <div class="image">
+                    <img src="images/hope-lg.jpg" height="100%" width="100%" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>Hi, i am you desc</p> -->
+             <!-- </div>
+              <div class="box">
+                <div class="image">
+                    <img src="images/hope-lg.jpg" height="100%" width="100%" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>Hi, i am you desc</p>
+             </div>
+             <div class="box">
+                <div class="image">
+                    <img src="images/hope-lg.jpg" height="100%" width="100%" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>Hi, i am you desc</p>
+             </div>
+             <div class="box">
+                <div class="image">
+                    <img src="images/hope-lg.jpg" height="100%" width="100%" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>Hi, i am you desc</p>
+             </div> 
+            -->
+        <!-- </div>
+
+         
+    <div class="right-side">
+           
+        <ul>
+            <h1 >Archive</h1>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            
+        </ul>
+
         
-       
-
-
-    <div class="cover4">
-        <div class="IV">
-            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
-            <h4>Title</h4>
-            <p>Hi, i am you desc</p>
-         </div>
-         <div class="IV">
-            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
-            <h4>Title</h4>
-            <p>Hi, i am you desc</p>
-         </div>
-         <div class="IV">
-            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
-            <h4>Title</h4>
-            <p>Hi, i am you desc</p>
-         </div>
-         <div class="IV">
-            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
-            <h4>Title</h4>
-            <p>Hi, i am you desc</p>
-         </div>
-         <div class="IV">
-            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
-            <h4>Title</h4>
-            <p>Hi, i am you desc</p>
-         </div>
-         <div class="IV">
-            <img src="images/hope-lg.jpg" height="150px" width="250px" alt="">
-            <h4>Title</h4>
-            <p>Hi, i am you desc</p>
-         </div>
-
-        </div>
-
-        <section class="left-side">
-            <h1>Archive</h1>
-            <ul>
-                <li>list1</li>
-                <li>list2</li>
-                <li>list3</li>
-                
-            </ul>
+        <ul>
             <h2>Latest</h2>
-            <ul>
-                <li>list1</li>
-                <li>list2</li>
-                <li>list3</li>
-            </ul>
-        </section>
-
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
     </div>
 
-   
+       </div>  
 
-    <footer>
+    <footer class="footer">
         <div class="li">
         <div>
         <ul>
@@ -228,26 +268,32 @@
         <ul>
             <li>subcribe</li>
         </ul>
-       
 
-        <form action="/index.html"  method="post" class=do >
+        <div class="input">
+        <form action="/index.html"  method="post">
             <input type="text" name="Email" id="Email"  placeholder="@email.com">
             <input type="submit" value="send">
+
+           
+          </form>
         </form>
 
-        <form action="/index.html"  method="post" class="bot">
-            <input type="submit" value="">
-            <input type="submit" value="">
-            <input type="submit" value="">
-            <input type="submit" value="">
+      
+        </div>
+        <div>
+            <form class="type">
+                <input type="submit" value="">
+               <input type="submit" value="">
+               <input type="submit" value="">
+               <input type="submit" value="">
+            </form>
+        </div>
             
        
     </div>
     </div>
 
-    </footer>
-
-    
+    </footer> -->
 
 </body>
 </html>

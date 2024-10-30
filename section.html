@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Brain Shop</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top-bar{
+            display: flex;
+            justify-content: space-between;
+            background-color: #f1f1f1;
+            padding: 10px 20px;
+            font-size:20px;
+        }
+
+        .top-bar a{
+            color: #333;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .top-bar-right{
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar-right span{
+              margin: 0 5px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:white;
+            padding: 10px 20px;
+            position: relative;
+           
+        }
+       
+        .search{
+            display: flex;
+            align-items: center;
+           
+        }
+
+        .search-bar select,
+        .search-bar input{
+            padding: 5px;
+            }
+
+        .search-bar{
+            display: flex;
+
+        }
+
+        .search-bar button{
+            padding: 5px 10px;
+            background-color:green;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+
+    .the{
+           background-color: #333;
+            color: white;
+            padding: 5px;
+            font-size: 35px;
+            /* width: 40px; */
+            font-family: Arial, sans-serif;
+            
+        }
+    .brain{
+        background-color:  #27c3ad;
+        color:white;
+        padding: 5px;
+        font-size: 35px;
+        font-family: Arial, sans-serif;
+        } 
+
+        .logo{
+            display: flex;
+        }
+
+        .customer{
+            font-size: 20px;
+        }
+
+        .number{
+            margin-top: 10px;
+        }
+
+        .main-nav{
+            background-color: #00796B;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+    .main-nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        height: 50px;
+    }
+
+    .main-nav ul li{
+        margin-right: 20px;
+    }
+
+    .main-nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+
+    .main-nav ul li a:hover{
+        text-decoration: underline;
+    }
+
+    .categogry{
+        /* position: absolute;
+        top: 0px; */
+    }
+
+    .categories{
+        background-color: #878689;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        width: 40%;
+        height: 20px;
+    }
+
+    .dropdown-menu  ul{
+        /*   */
+        /* flex-direction: row; */
+
+        /* display: none; */
+        position:absolute;
+        top: 200px; 
+        color: black;
+
+        /* background-color: white;
+        color: #27c3ad;
+        list-style: none;
+        /* padding: 0; */
+        /* margin: 0; */
+       /* top: 40px;
+       left: 10px; */
+
+       
+
+      
+        width: 150px;box-shadow: 0 2px 5px rgba (0,0,0.2);
+
+    }
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        po
+    }
+
+    /* .dropdown-menu li{
+        padding: 10px;
+    }
+
+    .dropdown-menu li a{
+        color: #27c3ad;
+        text-decoration: none;
+    }
+
+    .categories-button:hover
+    ,.dropdown-menu,
+    .dropdown-menu:hover{
+        display: flex;
+    } */
+
+       
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+            <a href="#">FAQS</a>
+        </div>
+        <div class="image">
+            <img src="logo copy.png" alt="logo" style="height: 50px;">
+
+        </div>
+
+        <div class="top-bar-right">
+            <a href="#">EN</a>
+            <span>|</span>
+            <a href="#">USD</a>
+            <span>|</span>
+        </option>
+
+        </div>
+
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <span class="the" style="font-weight: bolder;" mergin="0">THE</span>
+            <span class="brain" style="font-weight: bolder;">BRAIN</span>
+        </div>
+        <div class="search-bar">
+            <select>
+                <option class="phone">phone</option>
+            </select>
+            <input type="text" placeholder="Search for products">
+            <button>Search</button>
+        </div>
+
+        <div class="customer">
+            <span>Customer Service:</span>
+            <div class="number">
+                +233550965601
+            </div>
+        </div>
+           
+            
+
+    </header>
+
+    
+    <nav class="main-nav">
+
+        <div class="category">
+            
+           <div>categories</div> 
+           
+            <ul class="dropdown-menu">
+              
+                <li><a href="#">Fridge</a></li>
+                <li><a href="#">Rice cooker</a></li>
+                <li><a href="#">Television</a></li>
+               
+            </ul>
+
+        </div>
+
+
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Buy Now</a></li>
+        </ul>
+
+    </nav>
+    
+</body>
+</html>
